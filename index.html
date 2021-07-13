@@ -1,0 +1,156 @@
+<html>
+	<head>
+		<title>Survey Form</title>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <style type="text/css">
+            body{
+                margin: 0;
+                padding: auto;
+                font-family: sans-serif;
+                color: black;
+                background-image: url(""),url("");
+                
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            .bgimg1, .bgimg2, .bgimg3{
+                position: relative;
+                
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+            }
+            .bgimg1{
+                background-image: url("https://dt2sdf0db8zob.cloudfront.net/wp-content/uploads/2020/02/form-builders-11-850x435.png");
+                min-height: 100%;
+
+            }
+            .bgimg2{
+                background-image: url("https://developers.google.com/ml-kit/vision/text-recognition/images/text_recognition2x.png");
+                min-height: 90%;
+                opacity: 0.55;
+
+            }
+            .bgimg3{
+                background-image: url("https://www.textrazor.com/img/letters_inverse.png");
+                min-height: 100%;
+                opacity: 0.55;
+            }
+            #title{
+                position: relative;
+                left: 0;
+                top: 10px;
+                width: 100%;
+                height: 100px;
+                text-align: center;
+                color: rgb(4, 0, 252);
+                background-color: rgba(19, 15, 15, 0.925);                
+            }
+            .mid{
+                position: absolute;
+                left: 0;
+                width: 100%;
+                font-size: xx-large;
+                text-align: center;
+                color: rgb(34, 180, 238);
+                background-color: black;       
+            }
+            #description{
+                color: teal;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            #form{
+                position: relative;
+                margin: 0px 400px;
+                padding: 5px 10px;
+                top: 150px;
+                text-align: center;
+                background: rgb(65, 211, 211);
+                
+                color: black;
+                font-size: 20px;
+            }
+             
+        </style>
+	</head>
+	
+	<body>
+        <div>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">
+                A survey is a form with questions specifically designed to gather information about people's experiences, preferences, wants, and needs.
+            </p>
+        </div>
+        <div class="bgimg1">
+            <div id="form">
+                <form  id="survey-form">
+                    <div class="form-group">
+                        <label id="name-label" for="name">Name</label>
+                        <input type="name" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label id="email-label" for="email">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label id="number-label" for="number">Age</label>
+                        <input type="number" name="name" id="number" min="10" max="80" class="form-control" placeholder="Age" required>
+                    </div>
+                    <div class="form-group">
+                        <p>Choose your Best Role</p>
+                        <select value="dropdown" name="role" class="form-control" id="dropdown" required>
+                            <option disabled selected value>Select your role</option>
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="Tutor">Tutor</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <p>Do you like the Suvery</p>
+                        <label>
+                            <input type="radio" name="user-survey" value="yes" class="radio-input" checked>
+                            Yes
+                        </label>
+                        <label>
+                            <input type="radio" name="user-survey" value="no" class="radio-input">
+                            No
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <p>How much do you like the Survey</p>
+                        <label>
+                            <input name="check" value="very much" type="checkbox" class="input-check">
+                            Very much
+                        </label>
+                        <label>
+                            <input name="check" value="to much" type="checkbox" class="input-check">
+                            Too much
+                        </label>
+                        <label>
+                            <input name="check" value="wonderful" type="checkbox" class="input-check">
+                            wonderful
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <p>Give your comments(if any)</p>
+                        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter comment here"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="reset" id="reset" class="reset-button">Reset</button>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="submit" class="submit-button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="bgimg2"></div>
+        <div class="mid">
+            <p>Thanks for your Survey</p>
+        </div>
+
+        <div class="bgimg3"></div>
+	</body>
+</html>
